@@ -1,9 +1,11 @@
 import streamlit as st
 import pickle
 import re
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+nltk.download('stopwords')
 # Load the pre-trained model and vectorizer
 model = pickle.load(open('./models/model_updated.pkl', 'rb'))
 vectorizer = pickle.load(open('./models/vectorizer_updated.pkl', 'rb'))  # Save vectorizer too if you haven't already
