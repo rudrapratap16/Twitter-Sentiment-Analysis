@@ -68,13 +68,32 @@ import pickle
 pickle.dump(model, open('model.pkl', 'wb'))
 ```
 ---
-## Future Work
-- Implement deep learning models such as RNNs or LSTMs to improve accuracy.
-- Explore hyperparameter tuning for better performance.
-- Analyze other sentiment classes beyond just positive and negative.
+## Streamlit Web App
 
----
+The project includes a **Streamlit app** that allows users to input a tweet and get the sentiment prediction (Positive/Negative) in real-time.
+
+### How to Run the Streamlit App
+
+1. **Install the required libraries**:
+   ```bash
+   pip install streamlit nltk scikit-learn pandas
+   ```
+2. **Run the app**: After saving the Streamlit code in a file (e.g., app.py), run the following command in your terminal:
+   ```bash
+   streamlit run app.py
+   ```
+3. **Interact with the App**
+  - Input a tweet in the provided text area.
+  - Click "Predict Sentiment" to see whether the tweet is positive or negative.
+  - The app displays "Positive" sentiment with a green color and "Negative" sentiment with a red color.
+
+## Future Work
+
+- Implement **deep learning models** such as RNNs or LSTMs to improve accuracy.
+- Explore **hyperparameter tuning** for better performance.
+- Analyze **other sentiment classes** beyond just positive and negative.
 
 ## Conclusion
-This project demonstrates a simple but effective approach to sentiment analysis on Twitter data. The accuracy of 73.65% shows promising results, and future work can focus on improving this through advanced techniques.
+
+This project demonstrates a simple but effective approach to sentiment analysis on Twitter data. The integration of a **Streamlit app** allows users to interact with the model and see the sentiment classification results instantly. The **accuracy of 73.65%** shows promising results, and future work can focus on improving this through advanced techniques.
 
